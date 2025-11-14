@@ -1,0 +1,26 @@
+
+npm init -y
+npm install --save-dev typescript @types/node
+npm install --save-dev tsx
+npm i dotenv
+npx tsc --init
+
+npm i fastify @fastify/error @fastify/static close-with-grace
+
+** update package.json: "type": "module"
+
+
+npm i -D prisma
+npm i @prisma/client
+
+npx prisma
+npx prisma init --datasource-provider sqlite
+
+** delete prisma.config.ts file
+** edit prisma/schema.prisma - datasource block as needed
+
+npx prisma migrate dev --name init
+
+
+*** Misc stuff
+npx prisma studio
